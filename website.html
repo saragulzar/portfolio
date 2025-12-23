@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sara Gulzar | Website Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+        <a href="#hero" class="text-sm font-semibold tracking-tight text-slate-100">
+          Sara Gulzar
+        </a>
+        <nav class="hidden gap-6 text-xs font-medium text-slate-300 md:flex">
+          <a href="#projects" class="hover:text-sky-400">Projects</a>
+          <a href="#skills" class="hover:text-sky-400">Skills</a>
+          <a href="#about" class="hover:text-sky-400">About</a>
+          <a href="#contact" class="hover:text-sky-400">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <!-- 1. Hero Section -->
+      <section id="hero" class="border-b border-slate-800">
+        <div class="mx-auto flex max-w-5xl flex-col gap-10 px-4 py-16 md:flex-row md:items-center">
+          <div class="flex-1 space-y-4">
+            <p class="text-xs font-medium uppercase tracking-[0.2em] text-sky-400">
+              Website Developer
+            </p>
+            <h1 class="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">
+              Hi, I’m Sara Gulzar.
+            </h1>
+            <p class="max-w-xl text-sm leading-relaxed text-slate-300">
+              I build responsive, real-world web applications using React, Node.js, Express, Flask, SQL, and modern CSS.
+            </p>
+            <div class="flex flex-wrap gap-3 pt-2">
+              <a href="#projects"
+                 class="rounded-md bg-sky-500 px-4 py-2 text-xs font-semibold text-slate-950 shadow-sm hover:bg-sky-400">
+                View Projects
+              </a>
+              <a href="https://github.com/saragulzar" target="_blank"
+                 class="rounded-md border border-slate-700 px-4 py-2 text-xs font-semibold text-slate-100 hover:border-sky-500 hover:text-sky-300">
+                GitHub
+              </a>
+              <a href="Sara Gulzar Resume.pdf" target="_blank"
+                 class="rounded-md border border-slate-700 px-4 py-2 text-xs font-semibold text-slate-100 hover:border-sky-500 hover:text-sky-300">
+                Resume
+              </a>
+            </div>
+          </div>
+
+      </section>
+
+      <!-- 2. Projects Section -->
+      <section id="projects" class="border-b border-slate-800 bg-slate-950">
+        <div class="mx-auto max-w-5xl px-4 py-14">
+          <div class="mb-6 flex items-center justify-between gap-4">
+            <h2 class="text-lg font-semibold tracking-tight text-slate-50">
+              Featured Projects
+            </h2>
+           
+          </div>
+
+          <div class="space-y-8">
+            <!-- Project 1: Weather App -->
+            <article class="rounded-xl border border-slate-800 bg-slate-900/60 p-5 shadow-sm">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 class="text-sm font-semibold text-slate-50">
+                    Weather Forecast App
+                  </h3>
+                  <p class="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-sky-400">
+                    React · Tailwind CSS · REST API
+                  </p>
+                </div>
+                <div class="flex gap-2">
+                 
+                  <a href="https://github.com/saragulzar/React-Weather-App" target="_blank"
+                     class="rounded-md border border-slate-700 px-3 py-1.5 text-[11px] font-semibold text-slate-100 hover:border-sky-500 hover:text-sky-300">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <p class="mt-3 text-[13px] leading-relaxed text-slate-300">
+                A responsive weather forecast application built using React.js that fetches real-time weather data from external APIs.
+              </p>
+              <div class="mt-3 grid gap-3 text-[12px] text-slate-300 md:grid-cols-2">
+                <ul class="space-y-1">
+                  <li class="font-medium text-slate-200">Key Features</li>
+                  <li>Search weather by city.</li>
+                  <li>Real-time data fetching with loading states.</li>
+                  <li>Error handling for invalid locations.</li>
+                  <li>Responsive UI for mobile and desktop.</li>
+                </ul>
+                <ul class="space-y-1">
+                  <li class="font-medium text-slate-200">What I Did</li>
+                  <li>Built UI using reusable React components.</li>
+                  <li>Integrated third-party weather API.</li>
+                  <li>Managed local state and API calls.</li>
+                  <li>Implemented responsive layout with Tailwind CSS.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project 2: Movie System -->
+            <article class="rounded-xl border border-slate-800 bg-slate-900/60 p-5 shadow-sm">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 class="text-sm font-semibold text-slate-50">
+                    Full-Stack Movie Management System
+                  </h3>
+                  <p class="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-sky-400">
+                    Node.js · Express · SQL · HTML/CSS/JS
+                  </p>
+                </div>
+                <div class="flex gap-2">
+                 
+                  <a href="https://github.com/saragulzar/MovStrem" target="_blank"
+                     class="rounded-md border border-slate-700 px-3 py-1.5 text-[11px] font-semibold text-slate-100 hover:border-sky-500 hover:text-sky-300">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <p class="mt-3 text-[13px] leading-relaxed text-slate-300">
+                A complete full-stack movie website with a Node.js backend and SQL database, supporting CRUD operations and dynamic content.
+              </p>
+              <div class="mt-3 grid gap-3 text-[12px] text-slate-300 md:grid-cols-2">
+                <ul class="space-y-1">
+                  <li class="font-medium text-slate-200">Features</li>
+                  <li>Add, update, delete, and list movies.</li>
+                  <li>RESTful backend API.</li>
+                  <li>Persistent SQL database integration.</li>
+                  <li>Server-side business logic.</li>
+                </ul>
+                <ul class="space-y-1">
+                  <li class="font-medium text-slate-200">What I Did</li>
+                  <li>Designed relational database schema.</li>
+                  <li>Built backend with Express routes and controllers.</li>
+                  <li>Connected Node.js server with SQL database.</li>
+                  <li>Created basic frontend pages consuming the API.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project 3: Bakery Website -->
+            <article class="rounded-xl border border-slate-800 bg-slate-900/60 p-5 shadow-sm">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 class="text-sm font-semibold text-slate-50">
+                    Bakery Business Website
+                  </h3>
+                  <p class="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-sky-400">
+                    HTML · CSS · Tailwind · JavaScript
+                  </p>
+                </div>
+                <div class="flex gap-2">
+                
+                  <a href="https://github.com/saragulzar/Bakery-Website" target="_blank"
+                     class="rounded-md border border-slate-700 px-3 py-1.5 text-[11px] font-semibold text-slate-100 hover:border-sky-500 hover:text-sky-300">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <p class="mt-3 text-[13px] leading-relaxed text-slate-300">
+                A responsive bakery website showcasing products, pricing, and business information for a real-world use-case.
+              </p>
+              <ul class="mt-3 space-y-1 text-[12px] text-slate-300">
+                <li class="font-medium text-slate-200">Focus</li>
+                <li>Clean, modern UI with clear product sections.</li>
+                <li>Responsive layout for mobile and desktop.</li>
+                <li>Simple navigation and contact details for customers.</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Other Projects Grid -->
+          <div class="mt-10">
+            <h3 class="mb-3 text-sm font-semibold text-slate-200">
+              Other Projects
+            </h3>
+            <div class="grid gap-3 text-[12px] text-slate-300 sm:grid-cols-2 md:grid-cols-3">
+              <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                <p class="font-medium text-slate-100">To-Do App</p>
+                <p class="mt-1 text-[11px] text-slate-400">Vanilla JS todo list with local storage.</p>
+              </div>
+              <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                <p class="font-medium text-slate-100">Calculator</p>
+                <p class="mt-1 text-[11px] text-slate-400">Simple calculator using HTML, CSS, JS.</p>
+              </div>
+              <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                <p class="font-medium text-slate-100">E-Vote System</p>
+                <p class="mt-1 text-[11px] text-slate-400">E-Voting website with security features</p>
+              </div>
+              <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                <p class="font-medium text-slate-100">Ice Cream Website</p>
+                <p class="mt-1 text-[11px] text-slate-400">Landing page for an ice cream shop.</p>
+              </div>
+              <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                <p class="font-medium text-slate-100">Orphan Website</p>
+                <p class="mt-1 text-[11px] text-slate-400">Charity-style informational website.</p>
+              </div>
+              <div class="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                <p class="font-medium text-slate-100">Fitness App</p>
+                <p class="mt-1 text-[11px] text-slate-400">Website for workout tracking and maintaining  calories   </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Skills Section -->
+      <section id="skills" class="border-b border-slate-800">
+        <div class="mx-auto max-w-5xl px-4 py-14">
+          <h2 class="mb-6 text-lg font-semibold tracking-tight text-slate-50">
+            Skills
+          </h2>
+          <div class="grid gap-6 md:grid-cols-4">
+            
+            <div class="grid gap-5 text-[13px] md:col-span-3 md:grid-cols-3">
+              <div>
+                <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-sky-400">
+                  Frontend
+                </h3>
+                <ul class="mt-2 space-y-1 text-slate-300">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Tailwind CSS</li>
+                  <li>JavaScript</li>
+                  <li>React.js</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-sky-400">
+                  Backend
+                </h3>
+                <ul class="mt-2 space-y-1 text-slate-300">
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>Flask</li>
+                  <li>REST APIs</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-sky-400">
+                  Database & Tools
+                </h3>
+                <ul class="mt-2 space-y-1 text-slate-300">
+                  <li>SQL (MySQL / SQLite)</li>
+                  <li>Git & GitHub</li>
+                  <li>APIs</li>
+                  <li>Basic authentication</li>
+                  <li>CRUD operations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. About Me Section -->
+      <section id="about" class="border-b border-slate-800 bg-slate-950">
+        <div class="mx-auto max-w-5xl px-4 py-14">
+          <h2 class="mb-4 text-lg font-semibold tracking-tight text-slate-50">
+            About Me
+          </h2>
+          <div class="max-w-2xl text-sm leading-relaxed text-slate-300">
+            <p>
+              I’m a passionate web developer with hands-on experience building full-stack applications and creative Website pages.
+            </p>
+            <p class="mt-2">
+              I enjoy turning ideas into functional web products and working with modern technologies like React, Node.js, and Flask.
+            </p>
+            <p class="mt-2">
+              Currently focused on improving backend architecture and building scalable, secure applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Contact Section -->
+      <section id="contact" class="border-b border-slate-800">
+        <div class="mx-auto max-w-5xl px-4 py-14">
+          <h2 class="mb-4 text-lg font-semibold tracking-tight text-slate-50">
+            Contact
+          </h2>
+          <p class="mb-4 text-sm text-slate-300">
+            Open to internships, junior roles, and freelance work. Reach out and let’s talk about building something together.
+          </p>
+          <div class="grid gap-6 text-sm text-slate-300 md:grid-cols-2">
+            <div class="space-y-1">
+              <p>Email: <a href="sarachaudhry517@gmail.com" class="text-sky-400 hover:underline">sarachaudhry517@gmail.com</a></p>
+            </div>
+            <div class="space-y-1">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-sky-400">
+                Profiles
+              </p>
+              <p>
+                <a href="https://github.com/saragulzar" target="_blank" class="text-sky-400 hover:underline">GitHub</a> ·
+                <a href="https://www.linkedin.com/in/sara-gulzar-82b683275/" target="_blank" class="text-sky-400 hover:underline">LinkedIn</a> ·
+                <a href="Sara Gulzar Resume.pdf" target="_blank" class="text-sky-400 hover:underline">Resume</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 text-[11px] text-slate-500">
+        <p>© Sara Gulzar · Website Developer</p>
+      
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
