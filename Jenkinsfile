@@ -1,26 +1,51 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven'
+    }
+
+    parameters {
+        booleanParam(
+            name: 'executeTests',
+            defaultValue: true,
+            description: 'Execute Test Stage'
+        )
+    }
+
+    environment {
+        VERSION = '1.0.0'
+    }
+
     stages {
+
         stage('Build') {
             steps {
                 echo 'Building..'
-                // Here you can define commands for your build
+                echo "Version: ${VERSION}"
+                bat 'mvn -version'
             }
         }
 
         stage('Test') {
+            when {
+                expression { params.executeTests == true }
+            }
             steps {
-                echo 'Testing..'
-                // Here you can define commands for your tests
+                echo 'Testing with conditions..'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                // Here you can define commands for your deployment
             }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline Completed'
         }
     }
 }
